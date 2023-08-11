@@ -1,0 +1,598 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style-type: none;
+    font-family: "poppins", "sans-serif";
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    margin: 0px 10px;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+    color: maroon;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: black;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 8px;
+    
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 100%;
+    
+  }
+li {
+    text-indent: 30px;
+}
+
+.cta {
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    gap: 20px;
+    margin-right: 20px;
+
+}
+.cta img:hover{
+  opacity:0.8 !important;
+  transition: 0.6s;
+  transform: scale(1.25) translateY(-2px);
+  /*filter: invert(13%) sepia(55%) saturate(3555%) hue-rotate(337deg) brightness(107%) contrast(101%);*/
+  /*filter: invert(12%) sepia(20%) saturate(5310%) hue-rotate(329deg) brightness(118%) contrast(118%);*/
+  filter: invert(11%) sepia(20%) saturate(6000%) hue-rotate(329deg) brightness(120%) contrast(150%);
+}
+
+.name {
+    color: white;
+    width: auto;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 90px;
+    margin-top: 160px;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
+
+
+.intro {
+color: white;
+text-align: left;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 24px;
+text-decoration: none;
+width: 700px; 
+word-wrap: normal;
+margin-left: 90px;
+margin-top: -10px;
+}
+
+.heroimage {
+     height: 600px;
+     padding: 20px;
+     background-color: black;
+}
+#chibbi{
+    float: right;
+    display: flex;
+    align-items: baseline;
+    margin-right: 90px;
+    margin-top: 30px;
+
+} 
+.button {
+    display: inline-block;
+    font-weight: 500px;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-image:linear-gradient(to top, #464A4E, #000000);
+    border: none;
+    border-radius: 100px;
+    padding: 1em 3em;
+    margin:5px;
+    text-align: center;
+    background-size: 300% 150%; 
+    font-size: 20px;
+    cursor: pointer;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+  
+button:hover{
+    color: white;
+    background-image: linear-gradient(to left, #65060D, #981724);
+    background-position: -100% 100%;
+    font-weight: 600;
+    text-shadow: black;
+    box-shadow: 0 8px 16px 0 black(0,0,0,1);
+    transform: scale(1.02) translateY(-5px);
+  }
+
+
+.grad1{
+  height: 300px;
+  padding: 30px;
+  background-color: maroon; /*For browsers that do not support gradients*/
+  background-image: linear-gradient(#981724, #65060D);
+}
+
+#wrapper-text {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  font-size: 32px;
+  padding: 0;
+  text-shadow: 1px 2px 1px black;
+  margin-top: 80px;
+
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 68px;
+  font-weight: 800;
+  padding: 0px;
+  margin-top: -30px;
+  text-shadow: 1px 4px 2px black;
+  flex-wrap: wrap;
+}
+
+#wrapper:before{
+   content: " ";
+   animation: animate 5s infinite;
+   animation-play-state: running;
+}
+
+@keyframes animate {
+  5% {
+    content: "  UX Researcher 🧠";
+  }
+  37% {
+    content: "  UI Designer ✨";
+  }
+  50% {
+    content: "  Artist 👩🏻‍🎨";
+  }
+  75% {
+    content: "Photographer 📸";
+  }
+  100% {
+    content: " Graphic Designer 🪄";
+  }
+}
+
+.recentWork{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: 80px;
+
+}
+
+.para1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: -20px;
+}
+
+.para2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: -20px;
+}
+/*.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}*/
+
+.card-container {
+  display: grid;
+  grid-gap: 1rem;
+ 
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding:20px 60px;
+  }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 500px;
+  height: 675px;
+  margin-bottom: 60px;
+  background-image: linear-gradient(#818181, #000000);
+  margin-top: 56px;
+  border-radius: 30px;
+  background-color: #444444 /*For browsers that do not support gradients*/
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 500px;
+  height: 675px;
+  margin-bottom: 60px;
+  background-image: linear-gradient(#818181, #000000);
+  margin-top: 56px;
+  border-radius: 30px;
+  background-color: #444444 /*For browsers that do not support gradients*/
+}
+.card-img1{  
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px black;
+    width: 600px;
+    height: 425px;
+
+}
+
+.card-img2 {
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px black;
+    width: 600px;
+    height: 425px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.02) translateY(-5px);
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.02) translateY(-5px);
+}
+
+
+.container1 {
+  padding: 2px 16px;
+}
+
+.heading{
+  font-size: 18px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 24px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: -60px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.card-btn {
+    margin-top: -100px;
+    font-weight: 500px;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-image:linear-gradient(to top, #464A4E, #000000);
+    border: none;
+    border-radius: 100px;
+    padding: 1em 3em;
+    margin:0px;
+    text-align: center;
+    background-size: 300% 150%; 
+    font-size: 20px;
+    cursor: pointer;
+    /*align-items: flex-start;*/
+    /*justify-content: space-between;*/
+    margin-top: 0px;
+    float: right;
+    background-color: #444444 /*For browsers that do not support gradients*/
+}
+.card-btn:hover{
+  color: white;
+  background-image: linear-gradient(to left, #65060D, #981724);
+  background-position: -100% 100%;
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 black(0,0,0,1);
+  transform: scale(1.02) translateY(-5px);
+  text-shadow: black;
+}
+
+.checkout {
+  font-size: 28px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: -50px;
+  font-weight: 500;
+  text-align: center;
+}
+.myWork {
+  font-size:30px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.myWork:hover{
+   color: maroon;
+}
+
+/* Software skills*/
+.software-skills {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+.skills{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0 30px;
+  font-family: 'poppins', sans-serif;
+  margin-top: -60px;
+}
+
+.img-icon {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.container {
+  padding: 0px 60px;
+  
+  
+  /*@media (min-width: 1200px) and (max-width: 1441px) {
+    max-width: 1250px;
+    padding: 0px 36px;     
+  }*/
+  /*@media (max-width: 767px) {
+    padding: 0px 30px;  
+  }
+  @media (max-width: 479px) {
+    padding: 0px 30px 0px 20px; 
+  }*/
+}
+
+
+.skills {
+  margin-top: 55px;
+  margin-bottom: 230px;
+
+  .skills-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    width: 100%;
+
+    @media(max-width:700px) {
+      gap: 30px;
+    }
+
+    .box {
+      flex: 1 1 12%;
+      background:black;
+      background-image:linear-gradient(to top, #464A4E, #000000); 
+      box-shadow: grey 0px 0px 10px;
+      padding: 25px;
+      text-align: center;
+      border: 8px solid black;
+      transition: all 0.3s ease-in;      
+      border-radius: 30px;
+      
+
+      .image {
+        transition: all 0.3s ease-in-out 0.1s;
+        .img-icon {
+          max-width: 75px;
+          object-fit: contain;
+        }
+      }
+
+      .title{
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+        transform: scale(1.1);
+        border-color: white;
+
+        .image{
+          transform: scale(1.5) translateY(-20px);
+          .img-icon {
+            animation: bouncing 0.5s .3s; 
+          }          
+        }
+        .title{
+          letter-spacing: 2px;
+          
+        }
+      }
+
+      @media(max-width:1100px) {
+        flex: 1 0 25%;
+      }
+      @media(max-width:630px) {
+        flex: 1 0 35%;
+        padding: 15px;
+        .image {
+
+          .img-icon{
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes bouncing {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+.chibbi2 {
+float: right;
+display: flex;
+align-items: flex-start;
+margin-right: 350px;
+margin-top: -160px;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    
+}
+
+.footerText1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+}
+
+.footerText2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 3px;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.footerIcons img:hover{
+  opacity:0.8 !important;
+  transition: 0.6s;
+  filter: invert(60%) grayscale(100%) brightness(30%) sepia(200%) hue-rotate(-80deg) saturate(200%) contrast(1);
+  filter: grayscale(200%) brightness(35%) sepia(200%) hue-rotate(-50deg) saturate(150%) contrast(3);
+  transform: scale(1.25) translateY(-2px);
+
+}
+
+
+
+
+.copyRights {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+
