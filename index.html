@@ -2,9 +2,9 @@
 <html>
 <head>
     <!--css-->
-    <link rel="stylesheet" href="../UX_UI_HW_18/style.css">
+    <link rel="stylesheet" href="../UX_UI_HW_19/style.css">
     <!--Javascript-->
-    <script src="../UX_UI_HW_18/myscripts.js"></script>
+    <script src="../UX_UI_HW_19/myscripts.js"></script>
     <!--fontlinks-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
- </head>
+
+
+    <title>loader</title>
+</head>
+
+
 <body>
+<!--Preloader-->
+<div class="loader_bg">
+  <div class="loader"></div>
+</div>
+
 <!--Header-->
     <header class="header">
          <div>
@@ -43,13 +53,16 @@
       </div>
     </header>
 
-    <!--HEROIMAGE-->
+    <!--HERO Banner-->
+    <body>
+
 <div class="heroimage">
    <img id='chibbi' src="../UX_UI_HW_17/images/standing-chibbi-1.png" width="275px" height="550px">
    <h1 class="name"><span class="wave">👋🏼</span> Hi, I'm Ayesha Pervaiz</h1>
    <h3 class="intro"> Canada-based user experience & interface designer who loves solving problems & improving the lives of others through user-centric designs. </h3>
     <button class="button" id="button1">Resume</button>
     <button class="button" id="button2">Portfolio</button>
+   
 </div>
 
 <!--Gradient 1 with Text-->
@@ -184,5 +197,14 @@
      <p class="copyRights"> <span>©</span>2023, All rights reserved.</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+ <script>
+  setTimeout (function(){
+     $('.loader_bg').fadeToggle();
+  }, 1500);
+ </script>
+
 </body>
 </html>
+
+<!--  https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js  -->
