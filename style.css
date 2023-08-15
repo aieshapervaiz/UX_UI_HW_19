@@ -32,7 +32,6 @@
    animation-delay: .5s;
 
 }
-
 @keyframes loader {
   0% {
       transform: scale(0);
@@ -46,6 +45,9 @@
     opacity: 0;
   }
 }
+
+
+
 
 body {
     padding: 0;
@@ -188,28 +190,34 @@ margin-top: -10px;
     margin-top: 30px;
 
 } 
-.button {
+.hero-button {
     display: inline-block;
     font-weight: 500px;
     font-family: 'poppins', sans-serif;
     text-decoration: none;
     color: white;
-    background-image:linear-gradient(to top, #464A4E, #000000);
+    background-image:linear-gradient(to top,#000000, #464A4E );
     border: none;
     border-radius: 100px;
     padding: 1em 3em;
-    margin:5px;
+    margin: 0px;
     text-align: center;
     background-size: 300% 150%; 
     font-size: 20px;
     cursor: pointer;
     align-items: flex-start;
     justify-content: space-between;
-    margin-left: 90px;
     margin-top: 15px;
 }
+#button1 {
+  margin-left: 90px;
+}
+
+#button2 {
+  margin-left: 30px;
+}
   
-button:hover{
+.hero-button:hover{
     color: white;
     background-image: linear-gradient(to left, #65060D, #981724);
     background-position: -100% 100%;
@@ -398,7 +406,7 @@ button:hover{
     font-family: 'poppins', sans-serif;
     text-decoration: none;
     color: white;
-    background-image:linear-gradient(to top, #464A4E, #000000);
+    background-image:linear-gradient(to top, #000000, #464A4E);
     border: none;
     border-radius: 100px;
     padding: 1em 3em;
