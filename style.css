@@ -51,7 +51,7 @@ html {
 }
 
 #progress {
-  /*background-color: #65060D;*/
+  background-color: #65060D;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -76,9 +76,13 @@ html {
   color: black;
 }
 
+
+
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .logo {
@@ -292,13 +296,15 @@ margin-top: -10px;
    content: " ";
    animation: animate 5s infinite;
    animation-play-state: running;
+   animation-timing-function: linear;
+   animation-direction: alternate-reverse;
 }
 
 @keyframes animate {
-  5% {
+  0% {
     content: "  UX Researcher 🧠";
   }
-  37% {
+  25% {
     content: "  UI Designer ✨";
   }
   50% {
