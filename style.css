@@ -51,7 +51,7 @@ html {
 }
 
 #progress {
-  background-color: #65060D;
+  background-color: #981724;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -675,7 +675,6 @@ footer {
 
 .copyRights {
   text-align: center;
-  background-color: black;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;

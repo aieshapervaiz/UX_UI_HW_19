@@ -206,20 +206,53 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
 <script>
   ScrollReveal({
-    reset: true,
+    reset: false,
     distance: '60px',
     duration: 2500,
     delay: 400
   })
+  //Header
+  ScrollReveal().reveal('.logo', { delay: 100, origin: 'left' });
+  ScrollReveal().reveal('.navbar', { delay: 200, origin: 'bottom' });
+  ScrollReveal().reveal('.cta', { delay: 300, origin: "right" });
 
-  ScrollReveal().reveal('.logo', { delay: 500, origin: 'left' });
-  ScrollReveal().reveal('.navbar', { delay: 600, origin: 'bottom' });
-  ScrollReveal().reveal('.cta', { delay: 700, origin: "right" });
+  //hero banner
+  ScrollReveal().reveal('.heroimage', { delay: 100, origin: 'top' });
+  ScrollReveal().reveal('#chibbi', { delay: 300, origin: 'right' });
+  ScrollReveal().reveal('.name', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.intro', { delay: 400, origin: 'left' });
+  ScrollReveal().reveal('#button1', { delay: 500, origin: 'right'});
+  ScrollReveal().reveal('#button2', { delay: 500, origin: 'bottom'});
+
+  //Gradient text
+  ScrollReveal().reveal('#wrapper-text', { delay: 150, origin: 'top' });
+  ScrollReveal().reveal('#wrapper', { delay: 150, origin: 'bottom' });
+
+  //recent work
+  ScrollReveal().reveal('.recentWork', { delay: 200, origin: 'top' });
+  ScrollReveal().reveal('.para1', { delay: 200, origin: 'right' });
+  ScrollReveal().reveal('.para2', { delay: 200, origin: 'bottom' });
+  ScrollReveal().reveal('.card', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.card2', { delay: 300, origin: 'right' });
+  ScrollReveal().reveal('.checkout', { delay: 200, origin: 'top' });
+
+  //software skills
+  ScrollReveal().reveal('.software-skills', { delay: 100, origin: 'top' });
+  ScrollReveal().reveal('.skills', { delay: 150, origin: 'bottom' });
+
+  //chibbi2
+  ScrollReveal().reveal('.chibbi2', { delay: 200, origin: 'right' });
+
+  //Footer
+  ScrollReveal().reveal('.footerText1', { delay: 200, origin: 'top' });
+  ScrollReveal().reveal('.footerText2', { delay: 300, origin: 'top' });
+  ScrollReveal().reveal('.footerIcons', { delay: 400, origin: 'bottom' });
+  ScrollReveal().reveal('.copyRights', { delay: 400, origin: 'bottom' });
+
 </script>
 
 </body>
 </html>
-
-<!--  https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js  -->
