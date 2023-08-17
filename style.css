@@ -611,14 +611,13 @@ margin-top: -10px;
   75% { transform: scale(0.95, 1.05); }
 }
 
-
 .chibbi2 {
-float: right;
-display: flex;
-align-items: flex-start;
-margin-right: 350px;
-margin-top: -160px;
-}
+  float: right;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 350px;
+  margin-top: -160px;
+  }
 
 footer {
     background-color: black;
